@@ -19,13 +19,13 @@
     }
 
     h1 {
-      width: 50%;
+      width: 75%;
       text-align: left;
       color: #FC8E06
     }
 
     .paragraph {
-      width: 50%;
+      width: 75%;
       text-align: left;
       color: #FFFFFF;
       list-style: none;
@@ -1172,6 +1172,7 @@
           .attr("x", 4)
           .attr("y", 13)
           .attr("fill-opacity", d => +labelVisible(d));
+         .attr("x", 4)
         text.append("tspan")
           .text(d => d.data.name);
         const tspan = text.append("tspan")
