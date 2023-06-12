@@ -36,12 +36,6 @@
       height: auto;
     }
 
-    .chart {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
     .unit {
       fill: none;
       stroke-width: 13;
@@ -101,17 +95,9 @@
     Zenith
   </h1>
   <p class="paragraph">An art project with unique digital artifacts inscribed on the Bitcoin blockchain. Each one is a hand- and hard-coded collectible inspired by Mœbius. Zenith represent the first self-contained dynamic vector graphics on-chain with curated decentralized identities to manage our vault: nomosDAO</p>
-  <div class="chart">
-    <ul class="paragraph">
-      <li style="color:#FFFFFF;">19M 🌩</li>
-      <li style="color:#ffde34;">21M 🤌</li>
-      <li style="color:#484d56;">421 🦍</li>
-      <li style="color:#6041c4;">145 🍆</li>
-      <li style="color:#0073cf;">2k $wzrd</li>
-      <li style="color:#f2c48f;">200 $ordi</li>
-      <li style="color:#F7931A;">70k Old Sats</li>
-    </ul>
-    <svg id='chart_pie' class="svg-container" viewBox="0 0 50 50">
+  <p class="paragraph"></p>
+  <div class="svg-container">
+    <svg id='chart_pie' class="svg-container" viewBox="0 0 45 45">
       <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
       <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
       <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
@@ -119,8 +105,19 @@
       <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
       <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
       <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+
+      <text text-anchor="middle" font-size="10%">
+        <tspan x="50%" y="35%" fill="#FFFFFF">19M 🌩</tspan>
+        <tspan x="50%" y="40%" fill="#ffde34">21M 🤌</tspan>
+        <tspan x="50%" y="45%" fill="#484d56">421 🦍</tspan>
+        <tspan x="50%" y="50%" fill="#6041c4">145 🍆</tspan>
+        <tspan x="50%" y="55%" fill="#0073cf">2k $wzrd</tspan>
+        <tspan x="50%" y="60%" fill="#f2c48f">200 $ordi</tspan>
+        <tspan x="50%" y="65%" fill="#F7931A">70k ⌛sats</tspan>
+      </text>
     </svg>
   </div>
+  <p class="paragraph"></p>
   <div id='chart_div' class="svg-container">
 
     <script type='module'>
